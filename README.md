@@ -69,7 +69,7 @@ Configura Nginx para servir el directorio, por ejemplo:
 ```nginx
 server {
     listen 80;
-    server_name aristaweb.es www.aristaweb.es;
+    server_name domain-name.es www.domain-name.es;
     root /var/www/aristaweb;
     index index.html;
 
@@ -83,17 +83,17 @@ server {
 
 ## Añadir dominio más adelante
 
-1. **Compra el dominio** (p. ej. `aristaweb.es`) en un registrador como Namecheap, Porkbun o Nominalia.
+1. **Compra el dominio** (p. ej. `domain-name.es`) en un registrador como Namecheap, Porkbun o Nominalia.
 2. **Actualiza los registros DNS** apuntando al servidor (registro `A` a la IP del droplet).
 3. **Añade SSL con Certbot** (Let's Encrypt):
 
    ```bash
-   certbot --nginx -d aristaweb.es -d www.aristaweb.es
+   certbot --nginx -d domain-name.es -d www.domain-name.es
    ```
 
 4. **Actualiza el sitio**:
    - Reemplaza `REPLACE_WITH_YOUR_DOMAIN` en `robots.txt` y `sitemap.xml`.
-   - Añade `<link rel="canonical" href="https://aristaweb.es/">` en el `<head>` de `index.html`.
+   - Añade `<link rel="canonical" href="https://domain-name.es/">` en el `<head>` de `index.html`.
    - Añade `og:url` en los metadatos Open Graph.
 
 ---
@@ -102,7 +102,7 @@ server {
 
 | Placeholder | Dónde | Descripción |
 |---|---|---|
-| `contacto@aristaweb.es` | `index.html` | Email de contacto real |
+| `contacto@domain-name.es` | `index.html` | Email de contacto real |
 | `https://calendly.com/REPLACE_ME` | `index.html` | URL de Calendly para reservar llamadas |
 | `https://wa.me/REPLACE_ME` | `index.html` | Número de WhatsApp (formato internacional sin `+`, ej. `34600000000`) |
 | `REPLACE_WITH_YOUR_DOMAIN` | `robots.txt`, `sitemap.xml` | Dominio real cuando esté disponible |
