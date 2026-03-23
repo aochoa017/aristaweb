@@ -589,6 +589,27 @@ footer {
   color: #475569;
 }
 
+/* ===== DISABLED / COMING SOON ===== */
+.btn--disabled,
+.btn-plan.btn--disabled {
+  cursor: default;
+  opacity: 0.65;
+  pointer-events: none;
+}
+.header-cta--disabled {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.45rem 1.1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  opacity: 0.65;
+  cursor: default;
+}
+.footer-coming-soon {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 /* ===== UTILIDADES ===== */
 .text-muted { color: var(--color-text-muted); }
 .mt-1 { margin-top: 0.5rem; }

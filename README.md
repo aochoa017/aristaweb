@@ -102,9 +102,6 @@ server {
 
 | Placeholder | Dónde | Descripción |
 |---|---|---|
-| `contacto@domain-name.es` | `index.html` | Email de contacto real |
-| `https://calendly.com/REPLACE_ME` | `index.html` | URL de Calendly para reservar llamadas |
-| `https://wa.me/REPLACE_ME` | `index.html` | Número de WhatsApp (formato internacional sin `+`, ej. `34600000000`) |
 | `REPLACE_WITH_YOUR_DOMAIN` | `robots.txt`, `sitemap.xml` | Dominio real cuando esté disponible |
 
 ---
