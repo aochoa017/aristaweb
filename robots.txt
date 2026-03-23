@@ -1,0 +1,7 @@
+# Robots.txt – AristaWeb
+# Actualiza el dominio cuando esté disponible.
+
+User-agent: *
+Allow: /
+
+# Sitemap: https://REPLACE_WITH_YOUR_DOMAIN/sitemap.xml

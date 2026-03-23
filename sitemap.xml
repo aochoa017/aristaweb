@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap de AristaWeb.
+  Cuando tengas dominio, reemplaza https://REPLACE_WITH_YOUR_DOMAIN
+  con tu dominio real (ej. https://aristaweb.es) y actualiza <lastmod>.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://REPLACE_WITH_YOUR_DOMAIN/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
